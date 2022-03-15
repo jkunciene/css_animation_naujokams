@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+}
+.fonas{
+    height: 100vh;
+    background-image: url('./img/ocean.jpg');
+    background-size: cover;
+    
+}
+.saule{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(225, 238, 49);
+    border-radius: 50%;
+    position: relative;
+    /* sita pozicija gris kai animacija baigsis */
+    top: 10%;
+    left: 10%;
+    animation-duration: 8s;
+    animation-name: saulelydis;
+}
+@keyframes saulelydis {
+    from{
+        opacity: 1;
+        top: 10%;
+        left: 10%;
+    }
+    to{
+        opacity: 0;
+        top: 40%;
+        left: 80%;
+    }
+}
